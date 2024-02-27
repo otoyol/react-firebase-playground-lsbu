@@ -1,0 +1,10 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Allow read and write only to the "counter/global" document
+    match /counter/global {
+      allow read, write: if resource == null || resource.data.keys().hasAll(['data']);
+    }
+  }
+}

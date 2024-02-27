@@ -1,126 +1,70 @@
-# Codespaces Git Playground
+# Getting Started with Create React App
 
-This project is a guide on how to spin up a fully configured dev environment in the cloud ready for development using the blank canvas provided by GitHub using Codespaces.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-> [!WARNING]
-> Codespaces are deleted automatically after 30 days of inactivity. Read more about [Codespace lifecycle][1].
+## Available Scripts
 
-## Prerequisites
+In the project directory, you can run:
 
-GitHub account created.
+### `npm start`
 
-- [GitHub][2]
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-## Codespace Benefits: Elevate Your Development Experience 🚀
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-- Instant, customizable development environment
-- Accessible from any device with Internet
-- Facilitates real-time collaboration
-- Seamless Git and GitHub integration
-- Scalable with adjustable resources
-- Supports Visual Studio Code extensions
-- Container-based isolation for consistency
-- Efficient onboarding with time and resource savings
-- Disposable environments for testing and experimentation
-- GitHub manages the underlying infrastructure
-- Integrated with GitHub Actions for automation
+### `npm test`
 
-## Codespace Quickstart using Template
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-The link below provides a quickstart to spin up an environment using this template as a base project.
+### `npm run build`
 
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/juancarlosjr97/codespaces-git-playground?quickstart=1)
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-## Creating a repository from a template
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-Follow this [guide][3] to create a repository from this template.
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-After creating a project from this template, navigate to the README.md file and switch to code view. Then update the [line 29][4] by replacing `juancarlosjr97/codespaces-git-playground` with the path of the project created. It will be a combination of the GitHub username joined with the name of the GitHub repository as `${GITHUB_USERNAME}/${GITHUB_REPOSITORY}`.
+### `npm run eject`
 
-## Developing in Codespace
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-When a Codespace is created it comes with Git automatically authenticated with the credentials of the associated GitHub account. Additionally, it comes with basic tools such as `python` ready to start development. For more information, read the official [GitHub Documentation][5].
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-## Git Exercise from Codespaces
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-### Git and Python Version
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-After you have the Codespace up and running, run the following code from the terminal. Ensure you use capital V for the Python version command:
+## Learn More
 
-```bash
-git -v
-python -V
-```
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-The result should be similar to the below code, but it might differ from the versions on each Codespace:
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-```bash
-git version 2.43.0
-Python 3.10.13
-```
+### Code Splitting
 
-### Running Python script
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-Execute the below script to run the Python code located in [`main.py`][6]:
+### Analyzing the Bundle Size
 
-```bash
-python -m src.main
-```
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-Upon successful execution, the script will return: `Congratulations, you are running the Python script from a GitHub Codespace environment. Now, it is 29-01-2024 22:29 and time for further development.`
+### Making a Progressive Web App
 
-Please note that the date and time will vary depending on when the script is run.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Updating the Script
+### Advanced Configuration
 
-1. Open the python file located on `./src/main.py`
-2. Update the line [4][7] by updating the `strftime` to `%d-%m-%Y %H:%M:%S`. This update will format the date to include seconds.
-3. Run the Python script again and should return the date as a string with seconds. For example, `29-01-2024 22:35:35`.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-Congratulations, you have updated the Python script!
+### Deployment
 
-### Committing and Pushing the changes
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-After making the changes, the next step is to commit and push the changes to your GitHub repository.
+### `npm run build` fails to minify
 
-_To do this step, the project needs to be created from the template in order to have permission to make changes to the project. Follow these steps [Creating a repository from a template][8]_
-
-1. Stage the changes
-
-   ```bash
-   git add src/main.py
-   ```
-
-2. Commit the changes
-
-   ```bash
-   git commit -m "Adding seconds to date time formatting:"
-   ```
-
-3. Push the changes
-
-   ```bash
-   git push
-   ```
-
-Congratulations! You have successfully staged, committed, and pushed the changes to the remote repository. The dynamic date and time formatting feature has been added to the[`main.py`][6] script. Now, it is ready for further collaboration and development.
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE][9] file.
-
-## Support Information
-
-- [CODESPACES DOCUMENTATION][10]
-- [LICENSE][9]
-
-[1]: https://docs.github.com/en/codespaces/getting-started/understanding-the-codespace-lifecycle
-[2]: https://docs.github.com/en/get-started/quickstart/creating-an-account-on-github
-[3]: https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template
-[4]: #codespace-quickstart-using-template
-[5]: https://docs.github.com/en/codespaces/developing-in-a-codespace/developing-in-a-codespace
-[6]: ./src/main.py
-[7]: ./src/main.py#L4
-[8]: #creating-a-repository-from-a-template
-[9]: ./LICENSE
-[10]: https://docs.github.com/en/codespaces
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
